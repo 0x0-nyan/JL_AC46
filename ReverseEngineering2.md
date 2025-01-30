@@ -80,7 +80,13 @@ Index:     0x03          3
 File Name: _____.____1
 ****************************************
 ```
-At this point, I can say that this strange structure is normal for AC46 firmware.
+Actually, I noticed that listed CRC doesn't match to actual CRC except for uboot.boot.
+This is probably because of encryption, but there is one more strange thing.
+The listed CRC of _____.____2 is same as WS-2015's one and even the SDK's one.
+Maybe this is not a CRC, it meaning something different.
+It's embarrassing that I didn't check the CRC before though...
+
+Anyway, at this point, I can say that this strange structure is normal for AC46 firmware.
 I've seen different 3 firmware files and all of them have this structure.
 Although the file took from SDK is more encrypted, but it still seems to have a same structure.
 I guess it's for security against reverse engineering like this, since it can be public for firmware update through BFU file, while flash image usually doesn't be public and cannot be dumped without expertise.
