@@ -49,14 +49,19 @@ As always, I pushed the dump into hex editor and raw flash/file header appeared.
 And as I excepted, there is a overlap between _____.____2 and user.app.
 But anyway, like I did before, I extracted some files manually.<br>
 ```
-Desc       Raw Data      Detail
-****************************************
+           Raw Data      Detail
 Type:      0x01          uboot.boot
 CRC  :     0x620A        -
 Offset:    0x200         -
-File Size: 0x9B14        39700Bytes
+File Size: 0x9B94        39700Bytes
 Index:     0x00          0
 File Name: uboot.boot    -
+****************************************
+(Headerless)
+CRC:       0x1A4C        -
+Offset:    0xA020        -
+File Size: 0x31          49Bytes
+File Name: ac46btcf.bin  -
 ****************************************
 Type:      0x03          Additional
 CRC:       0xF977        Actual CRC:AF2E
@@ -68,7 +73,7 @@ File Name: _____.____2   -
 Type:      0x02          user.app
 CRC:       0x9A4D        Actual CRC:3758
 Offset:    0xB200        -
-File Size: 0xA6C00       683008Bytes
+File Size: 0xBE400       683008Bytes
 Index:     0x02          2
 File Name: user.app      -
 ****************************************
@@ -78,6 +83,12 @@ Offset:    0xB1E00       -
 File Size: 0x6C          108Bytes
 Index:     0x03          3
 File Name: _____.____1
+****************************************
+(Headerless)
+CRC:       0x54D1        -
+Offset:    0xB1E80       -
+File Size: 0x20          32Bytes
+File Name: chip_key.bin  -
 ****************************************
 ```
 Actually, I noticed that listed CRC doesn't match to actual CRC except for uboot.boot.
