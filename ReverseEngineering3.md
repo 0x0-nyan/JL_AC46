@@ -85,11 +85,4 @@ int JLAC46Cipher(BYTE* pData, u32 Length) {
 ```
 
 One more thing to tell about AC46 cipher is a few raw bytes are exposed every 64 byte block, like this example. Which looked rather weird to me.<br>
-```
-(Encrypted)                                                             (Raw)
-28 30 31 30 3A 30 08 E1 1C 4F 48 E1 30 00 09 E1   |(010:0)£¹.ý‹Åêü.|    28 30 31 30 3A 30 08 E1 1C 4F 48 E1 30 00 09 E1   |(010:0.á.OHá0..á|
-EC 61 49 E1 00 00 C9 44 00 60 A2 E0 02 10 00 92   |****************|    EC 61 49 E1 00 00 C9 44 00 60 A2 E0 02 10 00 92   |****************|
-08 E1 78 48 48 E1 34 00 09 E1 A0 01 49 E1 00 00   |****************|    08 E1 78 48 48 E1 34 00 09 E1 A0 01 49 E1 00 00   |****************|
-C9 44 A2 E0 02 10 00 92 08 E1 40 DF 48 E1 06 01   |****************|    C9 44 A2 E0 02 10 00 92 08 E1 40 DF 48 E1 06 01   |****************|
-09 E1 20 4F 49 E1 00 00 C9 44 0A E1 00 00 4A E1   |.Á`ÏIá!Bl.¿‹Ô¨;.|    09 E1 20 4F 49 E1 00 00 C9 44 0A E1 00 00 4A E1   |.á OIá..ÉD.á..Já|
-```
+![pic](https://github.com/0x0-nyan/JL_AC46/blob/main/pics/ac46_cipher.png)
