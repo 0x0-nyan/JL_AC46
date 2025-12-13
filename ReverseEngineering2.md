@@ -46,7 +46,7 @@ failed to do IOCTL_SCSI_PASS_THROUGH_DIRECT ioctl - 121 (The semaphore timeout p
 
 As always, I pushed the dump into hex editor and raw flash/file header appeared.<br>
 ![FlashHeader_Aitendo](Aitendo/FlashHeader_Aitendo.png)<br>
-And as I excepted, there is a overlap between _____.____2 and user.app.
+And as I expected, there is a overlap between _____.____2 and user.app.
 But anyway, like I did before, I extracted some files manually.<br>
 ```
            Raw Data      Detail
@@ -104,3 +104,5 @@ I guess it's for security against reverse engineering like this, since it can be
 
 And for now, this is the end of this markdown.
 There are more things to be investigated, and it's ongoing.
+
+14 December 2025: I'm back, it's finally [here](https://github.com/0x0-nyan/JL_AC46/blob/main/ReverseEngineering3.md)!
