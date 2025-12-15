@@ -9,6 +9,7 @@ Special thanks to [kagaimiq](https://github.com/kagaimiq)<br><br>
 [Reverse Engineering Part 1](https://github.com/0x0-nyan/JL_AC46/blob/main/ReverseEngineering1.md)<br>
 [Reverse Engineering Part 2](https://github.com/0x0-nyan/JL_AC46/blob/main/ReverseEngineering2.md)<br>
 [Reverse Engineering Part 3](https://github.com/0x0-nyan/JL_AC46/blob/main/ReverseEngineering3.md) (Jump Here For Latest Information)<br>
+[Reverse Engineering Part 4](https://github.com/0x0-nyan/JL_AC46/blob/main/ReverseEngineering4.md)<br>
 ## Discovery of Tools and Informations
 
 Recently, I found these rather interesting tools and forum about JieLi.
