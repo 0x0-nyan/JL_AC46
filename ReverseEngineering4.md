@@ -41,8 +41,11 @@ There may be UI related resource files like menu.res, ui_sty.sty, *.pix, *.tab. 
 Depending on project, there also may be another files like *.sbc, *.raw (.SBC is an audio file seen in new JieLi firmware, however it also exists in the AC46 SDK.).
 
 ## Resource Header and Resource File List
-This is a resource header and file headers, like seen in the beginning of flash. Unlike flash header, it exists in very end of user.app.<br>
+This is a resource header and file headers, like seen in the beginning of flash. Unlike flash header, it exists in very end of user.app.
+For detail about those, see [SDFILE / SYDFS (by kagaimiq)](https://github.com/kagaimiq/jielie/blob/main/datafmt/sdfile.md).<br>
 Obviously this file list stores all the resource files in user.app, however for some reason, as I mentioned earlier, all the resource files listed here have extra offset of 0x1400 in this list, while those actually don't.
+There is also a problem that actual CRC of file list doesn't match the one listed in resource header (0x5EAD in this case).
+
 ```
 6F 64 AD 5E 00 DE 0B 00 FD FF FF FF 22 00 00 00    |od.^.Þ..ýÿÿÿ"...|
 00 00 00 00 00 00 00 01 98 00 F0 F0 0A 01 00 00    |........˜.ðð....|
